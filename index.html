@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Wesley Leandro</title>
-    <meta name="description" content="Portafolio de Wesley Leandro - Desarrollo web, análisis de sistemas, programación y diseño 3D.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Wesley Leandro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f0f4f8; color: #333; }
+    header { background: linear-gradient(135deg, #003366, #005599); color: white; padding: 60px 20px; text-align: center; animation: fadeIn 1s ease-in-out; }
+    nav { background: #002244; color: white; text-align: center; padding: 12px 0; position: sticky; top: 0; z-index: 1000; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #00ccff; }
+    section { padding: 20px; max-width: 1000px; margin: auto; background: white; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); animation: fadeIn 1s ease-in-out; }
+    h2 { color: #003366; border-bottom: 2px solid #005599; padding-bottom: 8px; margin-bottom: 20px; }
+    ul { padding-left: 20px; }
+    footer { text-align: center; padding: 30px 20px; background: #003366; color: white; margin-top: 40px; }
+    .icon { margin-right: 10px; color: #005599; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.03); }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Wesley Leandro</h1>
-        <p>Analista y Diseñador de Sistemas | Desarrollador Web | Diseñador 3D</p>
-    </header>
+  <header>
+    <h1>Wesley Leandro</h1>
+    <p>Especialista en Sistemas, Desarrollo Web y Diseño 3D</p>
+  </header>
 
-    <section class="section" id="perfil">
-        <h2>Perfil Profesional</h2>
-        <p>Soy un profesional con experiencia en desarrollo de sistemas, diseño web, programación de aplicaciones y diseño 3D. Me apasiona crear soluciones tecnológicas innovadoras con enfoque funcional y estético.</p>
-    </section>
+  <nav>
+    <a href="#perfil">Perfil</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#educacion">Educación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <section class="section" id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Análisis y diseño de sistemas</li>
-            <li>Creación y diseño de páginas web</li>
-            <li>Programación de aplicaciones informáticas</li>
-            <li>Manipulación de bases de datos</li>
-            <li>Diseño 3D</li>
-            <li>Idiomas: Español, Inglés</li>
-        </ul>
-    </section>
+  <section id="perfil">
+    <h2><i class="fas fa-user icon"></i>Perfil Profesional</h2>
+    <p>Soy un profesional en tecnologías de la información con experiencia en desarrollo de páginas web, análisis y diseño de sistemas, programación de aplicaciones informáticas y diseño 3D. Me apasiona crear soluciones eficientes, funcionales y visualmente atractivas. Trabajo con compromiso, responsabilidad y creatividad.</p>
+  </section>
 
-    <section class="section" id="contacto">
-        <h2>Contacto</h2>
-        <p>Teléfono: 849-396-9648</p>
-        <p>Email: weslifeliz4@gmail.com</p>
-        <p>Ubicación: Azua, República Dominicana</p>
-        <p>Estudios: Instituto Politécnico Prof. Teresa Digna Feliz de Estrada (IPA)</p>
-    </section>
+  <section id="educacion">
+    <h2><i class="fas fa-graduation-cap icon"></i>Educación</h2>
+    <p>Técnico en Análisis y Diseño de Sistemas<br>Instituto Politécnico Prof. Teresa Digna Feliz de Estrada (IPA)<br>Finalizado en 2023<br>El IPA es una institución pública de educación técnica profesional fundada en 1985 mediante la Ley No. 280, y se rige por la Ley 66-97 y la Ordenanza 02-2010.</p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Wesley Leandro</p>
-    </footer>
+  <section id="servicios">
+    <h2><i class="fas fa-briefcase icon"></i>Servicios</h2>
+    <ul>
+      <li>Desarrollo y diseño de sitios web modernos y responsivos</li>
+      <li>Programación de aplicaciones informáticas</li>
+      <li>Análisis y diseño de sistemas</li>
+      <li>Gestión y manipulación de bases de datos</li>
+      <li>Diseño 3D de objetos y espacios</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2><i class="fas fa-code icon"></i>Proyectos Destacados</h2>
+    <ul>
+      <li><strong>Sitio Web para Negocio Local:</strong> Desarrollo completo de una web informativa usando HTML, CSS y JavaScript.</li>
+      <li><strong>Base de Datos Académica:</strong> Diseño y gestión en MySQL para control de estudiantes y materias.</li>
+      <li><strong>Modelado 3D de Interiores:</strong> Creación de espacios usando Blender para proyectos habitacionales.</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2><i class="fas fa-image icon"></i>Galería de Proyectos</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Web+Project" alt="Proyecto Web">
+      <img src="https://via.placeholder.com/300x200?text=Base+de+Datos" alt="Base de Datos">
+      <img src="https://via.placeholder.com/300x200?text=Dise%C3%B1o+3D" alt="Diseño 3D">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2><i class="fas fa-envelope icon"></i>Contacto</h2>
+    <p><strong>Tel:</strong> 849-396-9648<br>
+    <strong>Email:</strong> weslifeliz4@gmail.com<br>
+    <strong>Ubicación:</strong> Azua, República Dominicana</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wesley Leandro. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
